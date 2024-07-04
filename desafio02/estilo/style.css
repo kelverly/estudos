@@ -26,6 +26,7 @@ header > h1 {
     padding: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
+    font-size: 6vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -46,6 +47,7 @@ section{
     padding-left: 30px;
     text-align: center;
     font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 .normal{
     background-color: rgb(124, 123, 122);
@@ -61,8 +63,9 @@ section{
 }
 .imagem p {
     background-color: rgba(0, 0, 0, 0.356);
-    max-width: 320px;
+    display: inline-block;
     margin: auto;
+    padding: 20px;
     border-radius: 10px;
 }
 
