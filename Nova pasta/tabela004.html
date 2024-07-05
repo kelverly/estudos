@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tabela1{
+            background-color: antiquewhite;
+            border-collapse:collapse ;
+            width: 300px;
+            margin: 20px;
+        }
+        .tabela2{
+            background-color: aquamarine;
+            border-collapse:collapse ;
+            width: 300px;
+            margin: 20px;
+        }
+        .tabela3{
+            background-color: darkgray;
+            border-collapse:collapse ;
+            width: 700px;
+            margin: 20px;
+        }
+        .tabela4{
+            background-color: darkgray;
+            border-collapse:collapse ;
+            width: 700px;
+            margin: 20px;
+        }
+        .tabela5{
+            background-color: antiquewhite;
+            border-collapse:collapse ;
+            width: 1500px;
+            margin: 20px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .nomes{
+            background-color: chartreuse;
+        }
+        .grupo{
+            background-color: aqua;
+        }
+        .filmes{
+            background-color: antiquewhite;
+        }
+        .container, .tabela5{
+            overflow: auto; /*tabela responsiva*/
+        }
+    </style>
+</head>
+<body>
+    <table class="tabela1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+
+    <table class="tabela2">
+        <tr>
+            <td colspan="4">a</td>
+            <td rowspan="4">b</td>
+        
+        </tr>
+        <tr>
+            <td rowspan="4">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+        <tr>
+            <td colspan="4">n</td>
+        </tr>
+    </table>
+
+    <table class="tabela3">
+        <thead>
+            <tr>
+                <th scope="col">grupo</th>
+                <th colspan="3" scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">mulheres</th>
+                <td colspan="3">ANA MARIA</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">ANA MARIA</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">ANA MARIA da silva</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td colspan="3">kelverly frança dos santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">frança dos santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">frança kelverly santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <table class="tabela4">
+        <colgroup>
+            <col class="grupo">
+            <col class="nomes"> <!--para facilitar na hora de configurar a css-->
+            <col class="filmes">
+        </colgroup>
+        <tr>
+            <th scope="col">grupo</th>
+            <th colspan="3" scope="col">nomes</th>
+            <th colspan="3" scope="col">filmes</th>
+        </tr>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">mulheres</th>
+                <td colspan="3">ANA MARIA</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">ANA MARIA</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">ANA MARIA da silva</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td colspan="3">kelverly frança dos santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">frança dos santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td colspan="3">frança kelverly santos</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <table class="tabela5">
+            <thead>
+                <tr>
+                    <th scope="col">grupo</th>
+                    <th colspan="3" scope="col">nomes</th>
+                    <th colspan="3" scope="colgroup">filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">mulheres</th>
+                    <td colspan="3">ANA MARIA</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td colspan="3">ANA MARIA</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td colspan="3">ANA MARIA da silva</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td colspan="3">kelverly frança dos santos</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td colspan="3">frança dos santos</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td colspan="3">frança kelverly santos</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
