@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 400px;
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 150px;
+        }
+        #i3{
+            flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com flex-basis</h1>
+    <div class="container">
+        <div class="item" id="i1">1</div>
+        <div class="item" id="i2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis dolorem dolores nemo perspiciatis mollitia aliquid ullam corrupti quia, consequatur eaque tempora! Dolorem consequatur veritatis vero aperiam facere est sapiente.</div>
+        <div class="item" id="i3">3</div>
+        <div class="item" id="i4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores obcaecati nam, minus sequi quos magni voluptate aperiam autem</div>
+        <div class="item" id="i5">5</div>
+    </div>
+</body>
+</html>
