@@ -21,25 +21,19 @@
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 0;
-            flex-shrink: 2;
+            flex: 0 2 150px;
             }
             .item2{
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 2;
-            flex-shrink: 0;
+            flex: 3 0 150px;
             }
             .item3{
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 4;
-            flex-shrink: 1;
+            flex: 2 1 150px;
             }
             .container2{
             background-color: aqua;
@@ -51,30 +45,48 @@
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 0;
-            flex-shrink: 1;
+            flex: 1 2 250px;
             }
             .item5{
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 1;
-            flex-shrink: 1;
+            flex: 2 1 150px;
             }
             .item6{
                 background-color: aquamarine;
             border: 1px solid black;
             text-align: center;
-            flex-basis:  250px;
-            flex-grow: 0;
-            flex-shrink: 1;
+            flex: 0 2 50px;
+            }
+            .item7{
+                background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: initial;
+            }
+            .item8{
+                background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: none;
+            }
+            .item9{
+                background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            }
+            .item10{
+                background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex: 4;
             }
     </style>
 </head>
 <body>
-    <h1>trabalhando com flex-shrink</h1>
+    <h1>trabalhando com flex</h1>
     <div class="container">
         <div class="item1">1</div>
         <div class="item2">2</div>
@@ -84,6 +96,10 @@
         <div class="item4">4</div>
         <div class="item5">5</div>
         <div class="item6">6</div>
+        <div class="item6">7</div>
+        <div class="item6">8</div>
+        <div class="item6">9</div>
+        <div class="item6">10</div>
     </div>
 </body>
 </html>
